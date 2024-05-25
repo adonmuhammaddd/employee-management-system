@@ -7,10 +7,10 @@ Author: Adon Muhammad
 Copyright (c) 2024 Adon Muhammad
 -->
 
-<div class="w-full p-4 my-2 text-center sm:p-8">
+<div class="w-full text-center">
 
 
-  <div class="grid gap-4">
+  <!-- <div class="grid gap-4">
       <div class="grid grid-cols-5 gap-4">
           <div>
               <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="" />
@@ -28,6 +28,8 @@ Copyright (c) 2024 Adon Muhammad
               <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="" />
           </div>
       </div>
-  </div>
+  </div> -->
+
+  <app-table title="Employees" [tableColumns]="column" [tableData]="employees"></app-table>
 
 </div>
