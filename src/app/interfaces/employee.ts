@@ -20,4 +20,5 @@ export interface Employee {
   status: string
   group: string
   description: string
+  [key: string]: any
 }
