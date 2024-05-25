@@ -1,5 +1,5 @@
 /*
- * File: app.routes.ts                                                         *
+ * File: tailwind.config.js                                                    *
  * Project: employee-management-system                                         *
  * Created Date: 2024 May 25                                                   *
  * Author: Adon Muhammad                                                       *
@@ -10,9 +10,14 @@
 
 
 
-import { Routes } from '@angular/router';
-import { EmployeesComponent } from './pages/employees/employees.component';
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{html,ts}"
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
 
-export const routes: Routes = [
-  { path: 'employees', component: EmployeesComponent}
-];

@@ -1,5 +1,5 @@
 /*
- * File: app.component.ts                                                      *
+ * File: navbar.component.ts                                                   *
  * Project: employee-management-system                                         *
  * Created Date: 2024 May 25                                                   *
  * Author: Adon Muhammad                                                       *
@@ -11,17 +11,14 @@
 
 
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-navbar',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, SidebarComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [],
+  templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.css'
 })
-export class AppComponent {
-  title = 'employee-management-system';
+export class NavbarComponent {
+
 }
