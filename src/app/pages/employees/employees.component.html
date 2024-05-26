@@ -30,6 +30,14 @@ Copyright (c) 2024 Adon Muhammad
       </div>
   </div> -->
 
-  <app-table title="Employees" [tableColumns]="columns" [tableData]="employees" [itemsPerPage]="5"></app-table>
+  @if (isDataLoaded) {
+    <app-table
+      title="Employees"
+      [tableColumns]="columns"
+      [tableData]="employees"
+      [itemsPerPage]="5"
+      [countEntries]="[5, 10, 15, 20]"
+    ></app-table>
+  }
 
 </div>

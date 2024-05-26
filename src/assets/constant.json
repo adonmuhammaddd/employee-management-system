@@ -1,14 +1,4 @@
-/*
- * File: constant.js                                                           *
- * Project: employee-management-system                                         *
- * Created Date: 2024 May 25                                                   *
- * Author: Adon Muhammad                                                       *
- * -----                                                                       *
- * Copyright (c) 2024 adonmuhammaddd                                           *
- * -----                                                                       *
- */
-
-export const Employees = [
+[
   {
     "username": "ware28",
     "firstName": "Roth",

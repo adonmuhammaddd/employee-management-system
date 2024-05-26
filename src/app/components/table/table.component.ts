@@ -12,11 +12,14 @@
 
 import { Component, Input, OnInit } from '@angular/core';
 import { RupiahPipe } from '../../pipes/rupiah.pipe';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { ModalComponent } from '../modal/modal.component';
 
 @Component({
   selector: 'app-table',
   standalone: true,
-  imports: [RupiahPipe],
+  imports: [RupiahPipe, FormsModule, CommonModule, ModalComponent],
   templateUrl: './table.component.html',
   styleUrl: './table.component.css'
 })
@@ -25,6 +28,7 @@ export class TableComponent implements OnInit {
   @Input() tableColumns: Array<any> = []
   @Input() tableData: Array<any> = []
   @Input() itemsPerPage: number = 0
+  @Input() countEntries: number[] = []
 
   totalItems: number = 0
   totalPages: number = 0
@@ -33,6 +37,8 @@ export class TableComponent implements OnInit {
   searchText = ''
   filteredData: any = []
   displayedData: any = []
+  sortColumn: string | null = null
+  sortDirection: 'asc' | 'desc' | null = null
 
   ngOnInit(): void {
 
@@ -70,11 +76,15 @@ export class TableComponent implements OnInit {
     return displayedPageNumbers;
   }
 
+  onEntriesChange() {
+    this.updateDisplayedData()
+  }
 
   updateDisplayedData() {
     const startIndex = (this.currentPage - 1) * this.itemsPerPage
     const endIndex = startIndex + this.itemsPerPage
     this.displayedData = this.filteredData.slice(startIndex, endIndex)
+    console.log("this.displayedData ===========> ", this.displayedData)
     this.totalPages = Math.ceil(this.filteredData.length / this.itemsPerPage)
     this.displayedPages = this.getDisplayedPageNumbers()
     this.totalItems = this.filteredData.length
@@ -102,10 +112,47 @@ export class TableComponent implements OnInit {
   filterData() {
     this.filteredData = this.tableData.filter((item: any) => {
         return this.tableColumns.some((column) =>
-            String(item[column]).toLowerCase().includes(this.searchText.toLowerCase())
+            String(item[column.field]).toLowerCase().includes(this.searchText.toLowerCase())
         )
     })
     this.currentPage = 1
     this.updateDisplayedData()
+  }
+
+  sort(column: string) {
+    if (this.sortColumn === column) {
+        // If the same column is clicked again, toggle the sort direction
+        this.sortDirection = this.sortDirection === 'asc' ? 'desc' : 'asc';
+    } else {
+        // If a different column is clicked, set the sort column and default to ascending sort direction
+        this.sortColumn = column;
+        this.sortDirection = 'asc';
+    }
+
+    // Sort the data based on this.sortColumn and this.sortDirection
+    this.filteredData.sort((a: any, b: any) => {
+        const valueA = a[column].toLowerCase();
+        const valueB = b[column].toLowerCase();
+        let comparison = 0;
+
+        if (valueA > valueB) {
+            comparison = 1;
+        } else if (valueA < valueB) {
+            comparison = -1;
+        }
+
+        return this.sortDirection === 'asc' ? comparison : -comparison;
+    });
+
+    // After sorting, update the displayed data and pagination
+    this.currentPage = 1;
+    this.updateDisplayedData();
+
+    // Reset the sort direction for inactive columns
+    Object.keys(this.tableColumns).forEach((key: any) => {
+        if (key !== column) {
+            this.tableColumns[key] = '';
+        }
+    });
   }
 }

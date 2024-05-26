@@ -10,11 +10,11 @@
 
 
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TableComponent } from '../../components/table/table.component';
 import { Employee } from '../../interfaces/employee';
-import { Employees } from '../../../assets/constant';
 import { TableModule } from 'primeng/table';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 interface ColumnProps {
   field: string
@@ -25,11 +25,14 @@ interface ColumnProps {
 @Component({
   selector: 'app-employees',
   standalone: true,
-  imports: [TableComponent, TableModule],
+  imports: [TableComponent, TableModule, HttpClientModule],
   templateUrl: './employees.component.html',
   styleUrl: './employees.component.css'
 })
-export class EmployeesComponent {
+export class EmployeesComponent implements OnInit {
+
+  isDataLoaded: boolean = false
+
   columns: Array<ColumnProps> = [
     { field: "username", header: "Username", sort: true },
     { field: "firstName", header: "First Name", sort: true },
@@ -42,5 +45,18 @@ export class EmployeesComponent {
     { field: "description", header: "Description", sort: true }
   ]
 
-  employees: Array<Employee> = Employees
+  employees: Array<Employee> = []
+
+  constructor(private http: HttpClient){}
+
+  ngOnInit() {
+    this.http.get('/assets/constant.json')
+      .subscribe({
+        next: (data: any) => {
+          console.log(data);
+          this.employees = data;
+          this.isDataLoaded = true
+        }
+    });
+  }
 }

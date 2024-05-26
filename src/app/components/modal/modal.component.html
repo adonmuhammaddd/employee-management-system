@@ -1,0 +1,43 @@
+<!--
+Filename: a:\_PROJECT\employee-management-system\src\app\components\modal\modal.component.html
+Path: a:\_PROJECT\employee-management-system
+Created Date: Sunday, May 26th 2024, 1:33:10 am
+Author: Adon Muhammad
+
+Copyright (c) 2024 Adon Muhammad
+-->
+
+<div class="fixed inset-0 overflow-y-auto" [ngClass]="[!showModal ? 'hidden' : '']">
+  <div class="flex min-h-full items-center justify-center p-4 text-center">
+      <div class="relative w-full max-w-lg max-h-[90vh] overflow-y-auto transform rounded-2xl bg-white p-6 text-left shadow-xl transisiton-all flex flex-col gap-5">
+        <button
+          type="button"
+          onClick={closeModal}
+          class="absolute top-2 right-2 z-10 w-fit p-2 bg-primary-blue-100 rounded-full"
+        >
+        </button>
+
+        <div class="flex-1 flex flex-col gap-2">
+          <div class="flex flex-row justify-between">
+            <h2 class="font-semibold text-xl capitalize">
+              {{ firstName }} {{ lastName }}
+            </h2>
+            <button (click)="toggleModal()" aria-label="closeModal" title="close">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="mt-3 flex flex-wrap gap-4">
+            @for (employee of employees | keyvalue; track $index;) {
+              <div class="flex justify-between gap-5 w-full text-right">
+                <h4 class="text-grey capitalize">{{ employee.key }}</h4>
+                <p class="text-black-100 font-semibold">{{ employee.key !== 'basicSalary' ? employee.value : employee.value | rupiah }}</p>
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
