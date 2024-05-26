@@ -1,27 +1,64 @@
-# EmployeeManagementSystem
+# Employee Management System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+## Demo
 
-## Development server
+[:arrow_up: Back to top](#index)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Website: [http://ems.adonmuhammaddd.cloud](http://demo.adonmuhammaddd.cloud)
+- App login: [http://ems.adonmuhammaddd.cloud/login](http://demo.adonmuhammaddd.cloud/login)
 
-## Code scaffolding
+  | Username      | Password |
+  | ----------    | :------- |
+  | adon@mail.com | passw0rd |
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+[:arrow_up: Back to top](#index)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+| Auth (Login / Logout)                        |
+| Employee List                                |
+| Pop up Detail Employee                       |
+| Add Employee                                 |
 
-## Running unit tests
+## Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### Pre-Requisites
+- Node JS : 20.x.x
 
-## Running end-to-end tests
+[:arrow_up: Back to top](#index)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+#### Installing dependencies
 
-## Further help
+- Angular CLI: 17.3.8
+- TypesSript: ~5.4.2
+- TailwindCSS: ^3.4.3
+- PostCSS: ^8.4.38
+- Autoprefixer: ^10.4.19
+- crypto-js: ^4.2.0
+- moment: ^2.30.1
+- rxjs: ~7.8.0
+- SweetAlert2: ^11.11.0
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### Download and setup
+
+- Clone repo
+
+- Install node dependencies
+  ```
+  $ npm install
+  ```
+- Start local server
+  ```
+  $ ng serve
+  ```
+
+#### Use the app
+
+[:arrow_up: Back to top](#index)
+
+- Website: [http://localhost:4200](http://localhost:4200)
+- App login: [http://localhost:4200/login](http://localhost:4200/login)
+
+  | Username      | Password |
+  | ----------    | :------- |
+  | adon@mail.com | passw0rd |
