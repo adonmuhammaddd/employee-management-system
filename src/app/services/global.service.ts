@@ -13,6 +13,7 @@
 import { Injectable } from '@angular/core';
 import * as crypto from 'crypto-js';
 import Swal from 'sweetalert2';
+import { Location } from '@angular/common';
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +22,9 @@ export class GlobalService {
 
   key: string = '4d0n'
 
-  constructor() { }
+  constructor(
+    private _location: Location
+  ) { }
 
   encrypt(txt: string): string {
     return crypto.AES.encrypt(txt, this.key).toString()
@@ -84,6 +87,19 @@ export class GlobalService {
           title: "Deleted!",
           text: "Your data has been deleted.",
           icon: "success"
+        })
+      } else if (result.isConfirmed && action === 'submit') {
+        Swal.fire({
+          title: "Succeed!",
+          text: "Your data successfully stored.",
+          icon: "success",
+          showCancelButton: false,
+          confirmButtonText: "OK"
+        }).then((result) => {
+          if (result.isConfirmed) {
+
+            this._location.back()
+          }
         })
       }
     })

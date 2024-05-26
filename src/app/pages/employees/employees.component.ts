@@ -58,7 +58,7 @@ export class EmployeesComponent implements OnInit {
 
   ngOnInit() {
     if (this.authService.isLoggedIn()) {
-      this.http.get('/assets/constant.json')
+      this.http.get('/assets/employee-constant.json')
         .subscribe({
           next: (data: any) => {
             console.log(data);

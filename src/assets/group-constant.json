@@ -1,0 +1,42 @@
+[
+  {
+    "name": "IT",
+    "status": true
+  },
+  {
+    "name": "Risk",
+    "status": true
+  },
+  {
+    "name": "Culture",
+    "status": true
+  },
+  {
+    "name": "Marketing",
+    "status": true
+  },
+  {
+    "name": "Accountant",
+    "status": true
+  },
+  {
+    "name": "Business",
+    "status": true
+  },
+  {
+    "name": "Tax",
+    "status": true
+  },
+  {
+    "name": "Sales",
+    "status": true
+  },
+  {
+    "name": "Operation",
+    "status": true
+  },
+  {
+    "name": "Digital",
+    "status": true
+  }
+]

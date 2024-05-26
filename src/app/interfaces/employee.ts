@@ -15,10 +15,15 @@ export interface Employee {
   firstName: string
   lastName: string
   email: string
-  birthDate: string
+  birthDate: Date
   basicSalary: number
   status: string
   group: string
-  description: string
+  description: Date
   [key: string]: any
+}
+
+export interface Group {
+  name: string
+  status: boolean
 }

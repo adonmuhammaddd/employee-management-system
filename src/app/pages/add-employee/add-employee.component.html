@@ -12,33 +12,61 @@ Copyright (c) 2024 Adon Muhammad
   <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 border-2 rounded-lg drop-shadow-md">
     <h2 class="text-2xl font-semibold leading-tight">{{ title }}</h2>
 
-    <form class="w-full max-w-lg mt-10">
+    <form class="w-full max-w-lg mt-10" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
       <div class="flex flex-wrap -mx-3 mb-6">
-        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+
+        <div class="w-full px-3">
           <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
             Username
           </label>
-          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="xyz1990">
-          <p class="text-red-500 text-xs italic">Please fill out this field.</p>
-        </div>
-        <div class="w-full md:w-1/2 px-3">
-          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
-            Password
-          </label>
-          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************">
+          <input class="appearance-none block w-full text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="xyz1990" formControlName="username">
+          @if (submitted && f['username'].errors) {
+            @if (f['username'].errors['required']) {
+              <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+            }
+            @if (f['username'].errors['minlength']) {
+              <p class="text-red-500 text-xs italic">Username must be at least 6 characters.</p>
+            }
+            @if (f['username'].errors['maxlength']) {
+              <p class="text-red-500 text-xs italic">Username must not exceed 20 characters.</p>
+            }
+          }
         </div>
         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
           <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
             First Name
           </label>
-          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Adon">
-          <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+          <input class="appearance-none block w-full text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Adon" formControlName="firstName">
+          @if (submitted && f['firstName'].errors) {
+            @if (f['firstName'].errors['required']) {
+              <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+            }
+          }
         </div>
         <div class="w-full md:w-1/2 px-3">
           <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
             Last Name
           </label>
-          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Muhammad">
+          <input class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Muhammad" formControlName="lastName">
+          @if (submitted && f['lastName'].errors) {
+            @if (f['lastName'].errors['required']) {
+              <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+            }
+          }
+        </div>
+      </div>
+
+      <div class="flex flex-wrap -mx-3 mb-6">
+        <div class="w-full px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="birth-date">
+            Birth Date
+          </label>
+          <input class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="birth-date" type="date" [max]="maxDate" placeholder="adonmuhammaddd.dev@gmail.com" formControlName="birthDate">
+          @if (submitted && f['birthDate'].errors) {
+            @if (f['birthDate'].errors['required']) {
+              <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+            }
+          }
         </div>
       </div>
 
@@ -47,7 +75,15 @@ Copyright (c) 2024 Adon Muhammad
           <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
             Email
           </label>
-          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="adonmuhammaddd.dev@gmail.com">
+          <input class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="adonmuhammaddd.dev@gmail.com" formControlName="email">
+          @if (submitted && f['email'].errors) {
+            @if (f['email'].errors['required']) {
+              <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+            }
+            @if (f['email'].errors['email']) {
+              <p class="text-red-500 text-xs italic">Email is Invalid.</p>
+            }
+          }
         </div>
       </div>
       <div class="flex flex-wrap -mx-3 mb-2">
@@ -55,44 +91,82 @@ Copyright (c) 2024 Adon Muhammad
           <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="basic-salary">
             Basic Salary
           </label>
-          <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="basic-salary" type="text" placeholder="0" appNumberOnly>
+          <input class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="basic-salary" type="text" placeholder="0" appNumberOnly formControlName="basicSalary">
+          @if (submitted && f['birthDate'].errors) {
+            @if (f['birthDate'].errors['required']) {
+              <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+            }
+          }
         </div>
         <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
           <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="status">
             Status
           </label>
           <div class="relative">
-            <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="status">
-              <option>Contract</option>
-              <option>Full-Time</option>
+            <select class="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="status" formControlName="status">
+              <option value="Contract" selected>Contract</option>
+              <option value="Full-Time">Full-Time</option>
             </select>
+            @if (submitted && f['birthDate'].errors) {
+              @if (f['birthDate'].errors['required']) {
+                <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+              }
+            }
             <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
               <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
             </div>
           </div>
         </div>
-        <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+        <div class="w-full md:w-1/3 px-3 mb-6 md:mb-6">
           <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="status">
             Group
           </label>
           <div class="relative">
-            <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="status">
-              <option>Contract</option>
-              <option>Full-Time</option>
-              <option>Contract</option>
-              <option>Full-Time</option>
-              <option>Contract</option>
-              <option>Full-Time</option>
-              <option>Contract</option>
-              <option>Full-Time</option>
-              <option>Contract</option>
-              <option>Full-Time</option>
+            <select class="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="status" formControlName="group">
+              @for(group of groups; track $index; let first = $first) {
+                <option [value]="group.name" [selected]="first">{{ group.name }}</option>
+              }
             </select>
+            @if (submitted && f['birthDate'].errors) {
+              @if (f['birthDate'].errors['required']) {
+                <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+              }
+            }
             <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
               <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="flex flex-wrap -mx-3 mb-6">
+        <div class="w-full px-3">
+          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
+            Description
+          </label>
+          <input class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="desc" type="datetime-local" placeholder="" [max]="maxDateDesc" formControlName="description">
+          @if (submitted && f['birthDate'].errors) {
+            @if (f['birthDate'].errors['required']) {
+              <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+            }
+          }
+        </div>
+      </div>
+
+      <div class="flex flex-row justify-between">
+        <button
+          type="submit"
+          class="text-white hover:bg-blue-500 bg-blue-600 border-2  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+        >
+          Submit
+        </button>
+        <button
+          type="button"
+          class="text-gray-500 hover:bg-gray-100 bg-gray-200 border-2 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+          (click)="back()"
+        >
+          Back
+        </button>
       </div>
     </form>
 
