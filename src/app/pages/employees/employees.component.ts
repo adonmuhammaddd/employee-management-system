@@ -15,6 +15,8 @@ import { TableComponent } from '../../components/table/table.component';
 import { Employee } from '../../interfaces/employee';
 import { TableModule } from 'primeng/table';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { AuthService } from '../../services/auth.service';
+import { Router } from '@angular/router';
 
 interface ColumnProps {
   field: string
@@ -47,16 +49,24 @@ export class EmployeesComponent implements OnInit {
 
   employees: Array<Employee> = []
 
-  constructor(private http: HttpClient){}
+  constructor(
+    private http: HttpClient,
+    private authService: AuthService,
+    private router: Router
+  ){}
 
   ngOnInit() {
-    this.http.get('/assets/constant.json')
-      .subscribe({
-        next: (data: any) => {
-          console.log(data);
-          this.employees = data;
-          this.isDataLoaded = true
-        }
-    });
+    if (this.authService.isLoggedIn()) {
+      this.http.get('/assets/constant.json')
+        .subscribe({
+          next: (data: any) => {
+            console.log(data);
+            this.employees = data;
+            this.isDataLoaded = true
+          }
+      });
+    } else {
+      this.router.navigate(['login'])
+    }
   }
 }
