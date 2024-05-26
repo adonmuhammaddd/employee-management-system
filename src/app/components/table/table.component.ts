@@ -49,31 +49,31 @@ export class TableComponent implements OnInit {
 
   getDisplayedPageNumbers(): number[] {
     const totalPageNumbers = Math.min(this.totalPages, 5)
-    const displayedPageNumbers: number[] = [];
+    const displayedPageNumbers: number[] = []
 
-    let startPage = Math.max(1, this.currentPage - 2);
-    const endPage = Math.min(this.totalPages, startPage + totalPageNumbers - 1);
-    startPage = Math.max(1, endPage - totalPageNumbers + 1);
+    let startPage = Math.max(1, this.currentPage - 2)
+    const endPage = Math.min(this.totalPages, startPage + totalPageNumbers - 1)
+    startPage = Math.max(1, endPage - totalPageNumbers + 1)
 
     if (startPage > 1) {
         displayedPageNumbers.push(1);
         if (startPage > 2) {
-            displayedPageNumbers.push(-1);
+            displayedPageNumbers.push(-1)
         }
     }
 
     for (let i = startPage; i <= endPage; i++) {
-        displayedPageNumbers.push(i);
+        displayedPageNumbers.push(i)
     }
 
     if (endPage < this.totalPages) {
         if (endPage < this.totalPages - 1) {
-            displayedPageNumbers.push(-1);
+            displayedPageNumbers.push(-1)
         }
-        displayedPageNumbers.push(this.totalPages);
+        displayedPageNumbers.push(this.totalPages)
     }
 
-    return displayedPageNumbers;
+    return displayedPageNumbers
   }
 
   onEntriesChange() {
@@ -98,14 +98,14 @@ export class TableComponent implements OnInit {
   previousPage() {
       if (this.currentPage > 1) {
           this.currentPage--;
-          this.updateDisplayedData();
+          this.updateDisplayedData()
       }
   }
 
   nextPage() {
       if (this.currentPage < this.totalPages) {
-          this.currentPage++;
-          this.updateDisplayedData();
+          this.currentPage++
+          this.updateDisplayedData()
       }
   }
 
@@ -125,23 +125,23 @@ export class TableComponent implements OnInit {
         this.sortDirection = this.sortDirection === 'asc' ? 'desc' : 'asc';
     } else {
         // If a different column is clicked, set the sort column and default to ascending sort direction
-        this.sortColumn = column;
-        this.sortDirection = 'asc';
+        this.sortColumn = column
+        this.sortDirection = 'asc'
     }
 
     // Sort the data based on this.sortColumn and this.sortDirection
     this.filteredData.sort((a: any, b: any) => {
-        const valueA = a[column].toLowerCase();
-        const valueB = b[column].toLowerCase();
+        const valueA = a[column].toLowerCase()
+        const valueB = b[column].toLowerCase()
         let comparison = 0;
 
         if (valueA > valueB) {
-            comparison = 1;
+            comparison = 1
         } else if (valueA < valueB) {
-            comparison = -1;
+            comparison = -1
         }
 
-        return this.sortDirection === 'asc' ? comparison : -comparison;
+        return this.sortDirection === 'asc' ? comparison : -comparison
     });
 
     // After sorting, update the displayed data and pagination
@@ -151,7 +151,7 @@ export class TableComponent implements OnInit {
     // Reset the sort direction for inactive columns
     Object.keys(this.tableColumns).forEach((key: any) => {
         if (key !== column) {
-            this.tableColumns[key] = '';
+            this.tableColumns[key] = ''
         }
     });
   }

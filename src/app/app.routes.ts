@@ -12,7 +12,17 @@
 
 import { Routes } from '@angular/router';
 import { EmployeesComponent } from './pages/employees/employees.component';
+import { LoginComponent } from './pages/auth/login/login.component';
+import { LayoutComponent } from './components/layout/layout.component';
 
 export const routes: Routes = [
-  { path: 'employees', component: EmployeesComponent}
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [
+      { path: 'employees', component: EmployeesComponent }
+    ]
+  }
 ];
