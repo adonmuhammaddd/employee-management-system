@@ -33,6 +33,7 @@ interface ColumnProps {
 })
 export class EmployeesComponent implements OnInit {
 
+  title: string = 'Employees'
   isDataLoaded: boolean = false
 
   columns: Array<ColumnProps> = [

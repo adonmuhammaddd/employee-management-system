@@ -15,6 +15,7 @@ import { RupiahPipe } from '../../pipes/rupiah.pipe';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ModalComponent } from '../modal/modal.component';
+import { GlobalService } from '../../services/global.service';
 
 @Component({
   selector: 'app-table',
@@ -24,7 +25,6 @@ import { ModalComponent } from '../modal/modal.component';
   styleUrl: './table.component.css'
 })
 export class TableComponent implements OnInit {
-  @Input() title: string = ''
   @Input() tableColumns: Array<any> = []
   @Input() tableData: Array<any> = []
   @Input() itemsPerPage: number = 0
@@ -39,6 +39,10 @@ export class TableComponent implements OnInit {
   displayedData: any = []
   sortColumn: string | null = null
   sortDirection: 'asc' | 'desc' | null = null
+
+  constructor(
+    private globalService: GlobalService
+  ){}
 
   ngOnInit(): void {
 
@@ -74,6 +78,22 @@ export class TableComponent implements OnInit {
     }
 
     return displayedPageNumbers
+  }
+
+  actionValidate(action: string, data: any) {
+    if (action === 'delete') {
+      this.globalService.setConfirmationAlert(
+        action,
+        'You will be delete '+data.firstName+' '+data.lastName+'!',
+        '#d33'
+      )
+    } else {
+      this.globalService.setConfirmationAlert(
+        action,
+        'You will be edit '+data.firstName+' '+data.lastName+'!',
+        '#f90'
+      )
+    }
   }
 
   onEntriesChange() {

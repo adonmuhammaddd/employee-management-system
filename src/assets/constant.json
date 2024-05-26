@@ -6,7 +6,7 @@
     "email": "rothrichardson@envire.com",
     "birthDate": "2021-05-26 02:11:54",
     "basicSalary": 8874912,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2017-05-18 05:57:31"
   },
@@ -17,7 +17,7 @@
     "email": "elliottvalentine@envire.com",
     "birthDate": "2022-03-13 09:34:44",
     "basicSalary": 7073699,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2015-09-29 02:37:33"
   },
@@ -28,7 +28,7 @@
     "email": "kinneyyang@envire.com",
     "birthDate": "2020-04-28 09:46:50",
     "basicSalary": 8086840,
-    "status": "Active",
+    "status": "Contract",
     "group": "Risk",
     "description": "2014-04-03 10:27:24"
   },
@@ -39,7 +39,7 @@
     "email": "tracienunez@envire.com",
     "birthDate": "2018-07-30 03:54:13",
     "basicSalary": 8760158,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Risk",
     "description": "2021-12-10 03:49:55"
   },
@@ -50,7 +50,7 @@
     "email": "wallacekaufman@envire.com",
     "birthDate": "2022-07-13 09:20:20",
     "basicSalary": 7572233,
-    "status": "Active",
+    "status": "Contract",
     "group": "Infrastructure",
     "description": "2018-12-01 02:16:33"
   },
@@ -61,7 +61,7 @@
     "email": "gatesrobertson@envire.com",
     "birthDate": "2023-01-31 04:45:40",
     "basicSalary": 8797832,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Risk",
     "description": "2021-03-03 01:28:43"
   },
@@ -72,7 +72,7 @@
     "email": "friedadiaz@envire.com",
     "birthDate": "2015-01-02 02:53:21",
     "basicSalary": 6796979,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2018-05-23 09:37:47"
   },
@@ -83,7 +83,7 @@
     "email": "johnslester@envire.com",
     "birthDate": "2020-03-25 11:29:12",
     "basicSalary": 7237018,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2022-12-18 06:41:26"
   },
@@ -94,7 +94,7 @@
     "email": "josephinehaney@envire.com",
     "birthDate": "2022-07-16 03:34:53",
     "basicSalary": 8545721,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2021-03-11 03:54:39"
   },
@@ -105,7 +105,7 @@
     "email": "earlenefletcher@envire.com",
     "birthDate": "2021-08-01 12:04:34",
     "basicSalary": 7419768,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "IT",
     "description": "2014-03-09 05:09:03"
   },
@@ -116,7 +116,7 @@
     "email": "perkinscalderon@envire.com",
     "birthDate": "2017-01-08 05:54:55",
     "basicSalary": 8880160,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Risk",
     "description": "2022-01-11 05:30:40"
   },
@@ -127,7 +127,7 @@
     "email": "candypowers@envire.com",
     "birthDate": "2018-12-11 03:13:42",
     "basicSalary": 7654513,
-    "status": "Active",
+    "status": "Contract",
     "group": "Risk",
     "description": "2015-10-08 06:57:23"
   },
@@ -138,7 +138,7 @@
     "email": "dalevaughn@envire.com",
     "birthDate": "2014-05-16 10:04:24",
     "basicSalary": 8263616,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "IT",
     "description": "2018-07-21 04:59:21"
   },
@@ -149,7 +149,7 @@
     "email": "ruizcalhoun@envire.com",
     "birthDate": "2015-08-28 08:44:52",
     "basicSalary": 6512955,
-    "status": "Active",
+    "status": "Contract",
     "group": "Risk",
     "description": "2014-01-25 09:07:08"
   },
@@ -160,7 +160,7 @@
     "email": "johnsondominguez@envire.com",
     "birthDate": "2021-09-11 05:35:15",
     "basicSalary": 6254302,
-    "status": "Active",
+    "status": "Contract",
     "group": "Infrastructure",
     "description": "2015-09-22 06:09:00"
   },
@@ -171,7 +171,7 @@
     "email": "alyssastephens@envire.com",
     "birthDate": "2023-07-25 02:48:13",
     "basicSalary": 6217939,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Risk",
     "description": "2018-05-18 03:00:32"
   },
@@ -182,7 +182,7 @@
     "email": "maxinetalley@envire.com",
     "birthDate": "2016-04-14 07:50:18",
     "basicSalary": 8945865,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Infrastructure",
     "description": "2021-03-23 04:28:07"
   },
@@ -193,7 +193,7 @@
     "email": "owensforeman@envire.com",
     "birthDate": "2016-01-14 10:46:50",
     "basicSalary": 7813868,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2014-09-22 01:15:01"
   },
@@ -204,7 +204,7 @@
     "email": "beachboyer@envire.com",
     "birthDate": "2021-10-23 03:19:10",
     "basicSalary": 8304416,
-    "status": "Active",
+    "status": "Contract",
     "group": "Infrastructure",
     "description": "2020-09-25 06:12:40"
   },
@@ -215,7 +215,7 @@
     "email": "kimberlywiley@envire.com",
     "birthDate": "2023-09-21 10:53:07",
     "basicSalary": 6409002,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Infrastructure",
     "description": "2017-02-19 08:47:42"
   },
@@ -226,7 +226,7 @@
     "email": "nitasolomon@envire.com",
     "birthDate": "2018-03-12 12:53:47",
     "basicSalary": 7082044,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Risk",
     "description": "2017-07-27 02:09:28"
   },
@@ -237,7 +237,7 @@
     "email": "tylerdixon@envire.com",
     "birthDate": "2018-11-30 02:56:48",
     "basicSalary": 6692621,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2018-01-10 03:19:13"
   },
@@ -248,7 +248,7 @@
     "email": "jennarush@envire.com",
     "birthDate": "2020-04-13 09:35:39",
     "basicSalary": 6895793,
-    "status": "Active",
+    "status": "Contract",
     "group": "Risk",
     "description": "2023-04-14 08:03:57"
   },
@@ -259,7 +259,7 @@
     "email": "claytoncoleman@envire.com",
     "birthDate": "2020-04-19 07:42:20",
     "basicSalary": 6525395,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2019-02-23 04:40:12"
   },
@@ -270,7 +270,7 @@
     "email": "gracegrimes@envire.com",
     "birthDate": "2019-08-03 02:29:09",
     "basicSalary": 8556562,
-    "status": "Active",
+    "status": "Contract",
     "group": "Infrastructure",
     "description": "2015-05-16 03:48:58"
   },
@@ -281,7 +281,7 @@
     "email": "virgiebowman@envire.com",
     "birthDate": "2018-02-08 10:22:21",
     "basicSalary": 7769484,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2023-07-11 11:54:38"
   },
@@ -292,7 +292,7 @@
     "email": "anniecobb@envire.com",
     "birthDate": "2020-11-29 03:52:04",
     "basicSalary": 6929030,
-    "status": "Active",
+    "status": "Contract",
     "group": "Risk",
     "description": "2015-05-04 01:06:42"
   },
@@ -303,7 +303,7 @@
     "email": "mcfaddenshields@envire.com",
     "birthDate": "2016-07-17 12:50:33",
     "basicSalary": 6163722,
-    "status": "Active",
+    "status": "Contract",
     "group": "Infrastructure",
     "description": "2022-08-25 02:49:23"
   },
@@ -314,7 +314,7 @@
     "email": "hawkinsmueller@envire.com",
     "birthDate": "2024-05-19 05:33:41",
     "basicSalary": 8008206,
-    "status": "Active",
+    "status": "Contract",
     "group": "Risk",
     "description": "2017-11-17 01:23:38"
   },
@@ -325,7 +325,7 @@
     "email": "patsyfisher@envire.com",
     "birthDate": "2014-12-31 10:48:58",
     "basicSalary": 6856789,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2022-06-30 04:13:41"
   },
@@ -336,7 +336,7 @@
     "email": "camillefarley@envire.com",
     "birthDate": "2016-06-11 11:37:56",
     "basicSalary": 7382145,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Risk",
     "description": "2014-01-21 01:30:01"
   },
@@ -347,7 +347,7 @@
     "email": "simpsonkelly@envire.com",
     "birthDate": "2017-07-08 08:05:43",
     "basicSalary": 6870392,
-    "status": "Active",
+    "status": "Contract",
     "group": "Infrastructure",
     "description": "2024-05-25 09:04:38"
   },
@@ -358,7 +358,7 @@
     "email": "orrstark@envire.com",
     "birthDate": "2014-07-24 10:54:38",
     "basicSalary": 8146793,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Infrastructure",
     "description": "2016-12-26 02:09:52"
   },
@@ -369,7 +369,7 @@
     "email": "molliedavidson@envire.com",
     "birthDate": "2016-08-19 05:38:31",
     "basicSalary": 7574815,
-    "status": "Active",
+    "status": "Contract",
     "group": "Risk",
     "description": "2015-07-09 08:38:20"
   },
@@ -380,7 +380,7 @@
     "email": "bondsharpe@envire.com",
     "birthDate": "2020-05-05 10:34:51",
     "basicSalary": 7115102,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Infrastructure",
     "description": "2020-08-26 12:58:07"
   },
@@ -391,7 +391,7 @@
     "email": "delacruzashley@envire.com",
     "birthDate": "2022-05-02 10:37:36",
     "basicSalary": 7654397,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2023-04-19 11:46:01"
   },
@@ -402,7 +402,7 @@
     "email": "tabathamontoya@envire.com",
     "birthDate": "2018-11-24 06:51:12",
     "basicSalary": 7894117,
-    "status": "Active",
+    "status": "Contract",
     "group": "Infrastructure",
     "description": "2014-06-06 09:51:37"
   },
@@ -413,7 +413,7 @@
     "email": "rollinsguthrie@envire.com",
     "birthDate": "2016-07-27 04:40:43",
     "basicSalary": 6536504,
-    "status": "Active",
+    "status": "Contract",
     "group": "Risk",
     "description": "2018-12-24 08:52:51"
   },
@@ -424,7 +424,7 @@
     "email": "shaunaoneill@envire.com",
     "birthDate": "2020-08-30 05:18:44",
     "basicSalary": 8103674,
-    "status": "Active",
+    "status": "Contract",
     "group": "Infrastructure",
     "description": "2021-11-05 10:42:08"
   },
@@ -435,7 +435,7 @@
     "email": "hurstpotts@envire.com",
     "birthDate": "2021-01-17 08:39:22",
     "basicSalary": 7532074,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Risk",
     "description": "2015-07-02 03:09:42"
   },
@@ -446,7 +446,7 @@
     "email": "becklambert@envire.com",
     "birthDate": "2017-11-30 10:59:16",
     "basicSalary": 8411714,
-    "status": "Active",
+    "status": "Contract",
     "group": "Infrastructure",
     "description": "2017-10-30 12:57:14"
   },
@@ -457,7 +457,7 @@
     "email": "aidaharrell@envire.com",
     "birthDate": "2022-07-16 02:45:30",
     "basicSalary": 8331677,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2017-12-20 05:00:09"
   },
@@ -468,7 +468,7 @@
     "email": "gentryewing@envire.com",
     "birthDate": "2018-02-22 11:51:09",
     "basicSalary": 8664576,
-    "status": "Active",
+    "status": "Contract",
     "group": "Infrastructure",
     "description": "2018-08-12 02:56:58"
   },
@@ -479,7 +479,7 @@
     "email": "wynnmcknight@envire.com",
     "birthDate": "2017-08-07 08:05:31",
     "basicSalary": 7398082,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Risk",
     "description": "2021-11-28 05:59:01"
   },
@@ -490,7 +490,7 @@
     "email": "kaitlinhoward@envire.com",
     "birthDate": "2014-01-08 03:38:41",
     "basicSalary": 6280934,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Risk",
     "description": "2023-09-20 05:37:28"
   },
@@ -501,7 +501,7 @@
     "email": "sophiarose@envire.com",
     "birthDate": "2018-07-14 08:06:58",
     "basicSalary": 8037866,
-    "status": "Active",
+    "status": "Contract",
     "group": "Risk",
     "description": "2019-03-20 03:01:12"
   },
@@ -512,7 +512,7 @@
     "email": "boonescott@envire.com",
     "birthDate": "2015-06-27 09:12:28",
     "basicSalary": 8270138,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "IT",
     "description": "2016-07-08 10:12:30"
   },
@@ -523,7 +523,7 @@
     "email": "mercerfinch@envire.com",
     "birthDate": "2021-04-06 11:38:06",
     "basicSalary": 6612261,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2021-06-11 05:05:13"
   },
@@ -534,7 +534,7 @@
     "email": "moniquekeith@envire.com",
     "birthDate": "2020-07-04 09:15:52",
     "basicSalary": 8733895,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2015-09-10 08:53:50"
   },
@@ -545,7 +545,7 @@
     "email": "mamiedonovan@envire.com",
     "birthDate": "2018-12-03 08:04:37",
     "basicSalary": 6651465,
-    "status": "Active",
+    "status": "Contract",
     "group": "Risk",
     "description": "2019-02-11 06:23:29"
   },
@@ -556,7 +556,7 @@
     "email": "janellferrell@envire.com",
     "birthDate": "2021-07-20 09:36:48",
     "basicSalary": 6289069,
-    "status": "Active",
+    "status": "Contract",
     "group": "Infrastructure",
     "description": "2014-07-11 10:16:20"
   },
@@ -567,7 +567,7 @@
     "email": "munozacevedo@envire.com",
     "birthDate": "2016-12-04 12:04:05",
     "basicSalary": 6908258,
-    "status": "Active",
+    "status": "Contract",
     "group": "Risk",
     "description": "2020-11-09 01:04:50"
   },
@@ -578,7 +578,7 @@
     "email": "holmesdean@envire.com",
     "birthDate": "2022-08-16 01:02:56",
     "basicSalary": 8119947,
-    "status": "Active",
+    "status": "Contract",
     "group": "Risk",
     "description": "2020-11-17 11:31:01"
   },
@@ -589,7 +589,7 @@
     "email": "vivianreyes@envire.com",
     "birthDate": "2018-03-02 01:47:38",
     "basicSalary": 7511643,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "IT",
     "description": "2015-03-30 02:18:16"
   },
@@ -600,7 +600,7 @@
     "email": "foxdrake@envire.com",
     "birthDate": "2022-01-17 08:36:58",
     "basicSalary": 7961200,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Infrastructure",
     "description": "2016-09-10 11:59:01"
   },
@@ -611,7 +611,7 @@
     "email": "courtneyjefferson@envire.com",
     "birthDate": "2022-10-09 08:17:42",
     "basicSalary": 8374311,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "IT",
     "description": "2014-02-16 08:19:20"
   },
@@ -622,7 +622,7 @@
     "email": "francisstewart@envire.com",
     "birthDate": "2017-04-11 09:13:43",
     "basicSalary": 7944080,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "IT",
     "description": "2016-03-05 12:22:02"
   },
@@ -633,7 +633,7 @@
     "email": "houstonberg@envire.com",
     "birthDate": "2023-10-19 08:12:14",
     "basicSalary": 7608631,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Risk",
     "description": "2015-09-12 12:49:41"
   },
@@ -644,7 +644,7 @@
     "email": "annmariebarton@envire.com",
     "birthDate": "2019-11-17 09:34:48",
     "basicSalary": 8982211,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2016-02-22 10:36:57"
   },
@@ -655,7 +655,7 @@
     "email": "fernpetty@envire.com",
     "birthDate": "2022-12-15 02:07:33",
     "basicSalary": 7677423,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2014-05-25 03:32:16"
   },
@@ -666,7 +666,7 @@
     "email": "harveymcleod@envire.com",
     "birthDate": "2015-10-02 07:50:42",
     "basicSalary": 6843024,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Infrastructure",
     "description": "2018-04-04 04:05:33"
   },
@@ -677,7 +677,7 @@
     "email": "hoffmanbattle@envire.com",
     "birthDate": "2017-09-04 02:01:44",
     "basicSalary": 8605671,
-    "status": "Active",
+    "status": "Contract",
     "group": "Risk",
     "description": "2018-06-23 09:42:58"
   },
@@ -688,7 +688,7 @@
     "email": "conleyvaughan@envire.com",
     "birthDate": "2021-04-15 09:52:45",
     "basicSalary": 8729744,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "IT",
     "description": "2016-01-23 05:37:15"
   },
@@ -699,7 +699,7 @@
     "email": "blackholden@envire.com",
     "birthDate": "2016-05-28 08:02:45",
     "basicSalary": 7749806,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2017-01-24 09:41:35"
   },
@@ -710,7 +710,7 @@
     "email": "terrimckay@envire.com",
     "birthDate": "2021-03-04 12:08:14",
     "basicSalary": 8973178,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Infrastructure",
     "description": "2018-03-14 08:07:04"
   },
@@ -721,7 +721,7 @@
     "email": "jennysantiago@envire.com",
     "birthDate": "2023-01-10 06:07:26",
     "basicSalary": 8913344,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2022-02-12 07:29:15"
   },
@@ -732,7 +732,7 @@
     "email": "elmagomez@envire.com",
     "birthDate": "2021-05-08 04:40:04",
     "basicSalary": 6720372,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "IT",
     "description": "2018-10-25 05:37:40"
   },
@@ -743,7 +743,7 @@
     "email": "brightfowler@envire.com",
     "birthDate": "2015-03-12 05:11:03",
     "basicSalary": 7520646,
-    "status": "Active",
+    "status": "Contract",
     "group": "Infrastructure",
     "description": "2020-12-29 06:55:16"
   },
@@ -754,7 +754,7 @@
     "email": "cannonnelson@envire.com",
     "birthDate": "2014-09-07 01:31:19",
     "basicSalary": 6719754,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2022-05-05 12:13:24"
   },
@@ -765,7 +765,7 @@
     "email": "zelmafrye@envire.com",
     "birthDate": "2020-08-17 12:06:51",
     "basicSalary": 6250295,
-    "status": "Active",
+    "status": "Contract",
     "group": "Risk",
     "description": "2021-03-30 09:34:16"
   },
@@ -776,7 +776,7 @@
     "email": "elenabowen@envire.com",
     "birthDate": "2016-02-06 09:14:06",
     "basicSalary": 6993841,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "IT",
     "description": "2024-01-27 01:42:57"
   },
@@ -787,7 +787,7 @@
     "email": "nadinejoyner@envire.com",
     "birthDate": "2023-12-24 07:47:44",
     "basicSalary": 7690124,
-    "status": "Active",
+    "status": "Contract",
     "group": "Risk",
     "description": "2017-09-22 11:31:56"
   },
@@ -798,7 +798,7 @@
     "email": "deannhart@envire.com",
     "birthDate": "2017-06-15 11:22:17",
     "basicSalary": 7892838,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Infrastructure",
     "description": "2018-04-12 04:29:32"
   },
@@ -809,7 +809,7 @@
     "email": "norrisbutler@envire.com",
     "birthDate": "2024-04-22 04:11:50",
     "basicSalary": 7812362,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2019-02-15 09:34:49"
   },
@@ -820,7 +820,7 @@
     "email": "natalieespinoza@envire.com",
     "birthDate": "2022-07-28 07:54:54",
     "basicSalary": 6804370,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2015-01-04 05:12:14"
   },
@@ -831,7 +831,7 @@
     "email": "bowersmckinney@envire.com",
     "birthDate": "2024-02-27 05:20:01",
     "basicSalary": 6371058,
-    "status": "Active",
+    "status": "Contract",
     "group": "Infrastructure",
     "description": "2016-07-11 12:57:08"
   },
@@ -842,7 +842,7 @@
     "email": "dorothymason@envire.com",
     "birthDate": "2022-11-25 01:36:17",
     "basicSalary": 7158739,
-    "status": "Active",
+    "status": "Contract",
     "group": "Infrastructure",
     "description": "2019-01-11 05:45:24"
   },
@@ -853,7 +853,7 @@
     "email": "marthaperkins@envire.com",
     "birthDate": "2018-06-02 10:06:13",
     "basicSalary": 8431254,
-    "status": "Active",
+    "status": "Contract",
     "group": "Infrastructure",
     "description": "2024-04-14 03:15:38"
   },
@@ -864,7 +864,7 @@
     "email": "shellyhill@envire.com",
     "birthDate": "2021-04-11 02:40:53",
     "basicSalary": 8438800,
-    "status": "Active",
+    "status": "Contract",
     "group": "Infrastructure",
     "description": "2020-02-21 02:30:59"
   },
@@ -875,7 +875,7 @@
     "email": "jaclynbecker@envire.com",
     "birthDate": "2021-03-11 12:29:42",
     "basicSalary": 8985046,
-    "status": "Active",
+    "status": "Contract",
     "group": "Infrastructure",
     "description": "2015-12-30 11:52:19"
   },
@@ -886,7 +886,7 @@
     "email": "vinsonharrison@envire.com",
     "birthDate": "2019-12-31 02:45:22",
     "basicSalary": 6251939,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "IT",
     "description": "2023-09-07 06:57:39"
   },
@@ -897,7 +897,7 @@
     "email": "krisschwartz@envire.com",
     "birthDate": "2017-03-17 05:37:16",
     "basicSalary": 6375891,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Infrastructure",
     "description": "2016-06-13 04:30:13"
   },
@@ -908,7 +908,7 @@
     "email": "barrettmaxwell@envire.com",
     "birthDate": "2016-09-07 03:11:36",
     "basicSalary": 8109242,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "IT",
     "description": "2018-12-31 05:02:33"
   },
@@ -919,7 +919,7 @@
     "email": "dennisharper@envire.com",
     "birthDate": "2019-11-06 10:21:37",
     "basicSalary": 7381920,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Infrastructure",
     "description": "2017-12-16 08:24:07"
   },
@@ -930,7 +930,7 @@
     "email": "davenportmercado@envire.com",
     "birthDate": "2021-08-21 01:04:52",
     "basicSalary": 7653192,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Infrastructure",
     "description": "2021-03-16 07:22:36"
   },
@@ -941,7 +941,7 @@
     "email": "masseymccall@envire.com",
     "birthDate": "2018-07-02 11:21:16",
     "basicSalary": 7375678,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "IT",
     "description": "2022-12-19 02:42:00"
   },
@@ -952,7 +952,7 @@
     "email": "wolfelarsen@envire.com",
     "birthDate": "2023-09-08 04:15:03",
     "basicSalary": 7654412,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2021-01-01 08:13:56"
   },
@@ -963,7 +963,7 @@
     "email": "jocelynsavage@envire.com",
     "birthDate": "2017-05-02 02:04:26",
     "basicSalary": 6418418,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "IT",
     "description": "2018-03-10 03:39:23"
   },
@@ -974,7 +974,7 @@
     "email": "sylviahawkins@envire.com",
     "birthDate": "2023-07-26 09:38:12",
     "basicSalary": 8605164,
-    "status": "Active",
+    "status": "Contract",
     "group": "Infrastructure",
     "description": "2018-01-02 10:39:22"
   },
@@ -985,7 +985,7 @@
     "email": "boothrowland@envire.com",
     "birthDate": "2023-05-18 06:59:21",
     "basicSalary": 6976750,
-    "status": "Active",
+    "status": "Contract",
     "group": "Risk",
     "description": "2019-12-30 05:01:40"
   },
@@ -996,7 +996,7 @@
     "email": "stacycampbell@envire.com",
     "birthDate": "2017-09-30 02:09:47",
     "basicSalary": 6825248,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "IT",
     "description": "2023-10-16 07:19:05"
   },
@@ -1007,7 +1007,7 @@
     "email": "brigittemyers@envire.com",
     "birthDate": "2021-08-05 03:37:56",
     "basicSalary": 7399552,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2019-10-09 02:41:42"
   },
@@ -1018,7 +1018,7 @@
     "email": "howellbarrera@envire.com",
     "birthDate": "2014-10-01 09:06:54",
     "basicSalary": 8065308,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2015-09-26 03:09:36"
   },
@@ -1029,7 +1029,7 @@
     "email": "inezcline@envire.com",
     "birthDate": "2016-07-18 06:29:29",
     "basicSalary": 7941043,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2020-05-13 12:50:15"
   },
@@ -1040,7 +1040,7 @@
     "email": "deethornton@envire.com",
     "birthDate": "2022-01-02 05:51:35",
     "basicSalary": 8448152,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Infrastructure",
     "description": "2021-02-03 11:21:04"
   },
@@ -1051,7 +1051,7 @@
     "email": "dickersonlong@envire.com",
     "birthDate": "2019-12-20 07:42:36",
     "basicSalary": 8227796,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Infrastructure",
     "description": "2022-02-02 03:13:29"
   },
@@ -1062,7 +1062,7 @@
     "email": "woodardhughes@envire.com",
     "birthDate": "2022-06-12 06:02:37",
     "basicSalary": 7506001,
-    "status": "Active",
+    "status": "Contract",
     "group": "Risk",
     "description": "2015-07-21 11:02:42"
   },
@@ -1073,7 +1073,7 @@
     "email": "osbornemiller@envire.com",
     "birthDate": "2024-03-04 09:05:33",
     "basicSalary": 7846595,
-    "status": "Active",
+    "status": "Contract",
     "group": "Risk",
     "description": "2015-09-17 09:34:28"
   },
@@ -1084,7 +1084,7 @@
     "email": "mabelmooney@envire.com",
     "birthDate": "2021-04-25 11:41:36",
     "basicSalary": 6863907,
-    "status": "Inactive",
+    "status": "InContract",
     "group": "Risk",
     "description": "2014-03-18 03:20:02"
   },
@@ -1095,7 +1095,7 @@
     "email": "belindahoover@envire.com",
     "birthDate": "2021-03-22 08:27:05",
     "basicSalary": 6111186,
-    "status": "Active",
+    "status": "Contract",
     "group": "IT",
     "description": "2015-01-23 03:32:21"
   }

@@ -1,7 +1,7 @@
 /*
- * File: navbar.component.ts                                                   *
+ * File: add-employee.component.ts                                             *
  * Project: employee-management-system                                         *
- * Created Date: 2024 May 25                                                   *
+ * Created Date: 2024 May 26                                                   *
  * Author: Adon Muhammad                                                       *
  * -----                                                                       *
  * Copyright (c) 2024 adonmuhammaddd                                           *
@@ -11,23 +11,16 @@
 
 
 import { Component } from '@angular/core';
-import { AuthService } from '../../services/auth.service';
+import { NumberOnlyDirective } from '../../directives/number-only.directive';
 
 @Component({
-  selector: 'app-navbar',
+  selector: 'app-add-employee',
   standalone: true,
-  imports: [],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  imports: [NumberOnlyDirective],
+  templateUrl: './add-employee.component.html',
+  styleUrl: './add-employee.component.css'
 })
-export class NavbarComponent {
+export class AddEmployeeComponent {
 
-
-  constructor(
-    private authService: AuthService
-  ){}
-
-  logout() {
-    this.authService.logout()
-  }
+  title: string = 'Add Employee'
 }

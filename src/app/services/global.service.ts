@@ -67,5 +67,25 @@ export class GlobalService {
         icon: icon,
         title: title
     })
-}
+  }
+
+  setConfirmationAlert(action: string, desc: string, confirmBtnColor: string) {
+    Swal.fire({
+      title: "Are you sure?",
+      text: desc,
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: confirmBtnColor,
+      cancelButtonColor: "#6b7280",
+      confirmButtonText: "Yes"
+    }).then((result) => {
+      if (result.isConfirmed && action === 'delete') {
+        Swal.fire({
+          title: "Deleted!",
+          text: "Your data has been deleted.",
+          icon: "success"
+        })
+      }
+    })
+  }
 }

@@ -14,6 +14,7 @@ import { Routes } from '@angular/router';
 import { EmployeesComponent } from './pages/employees/employees.component';
 import { LoginComponent } from './pages/auth/login/login.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { AddEmployeeComponent } from './pages/add-employee/add-employee.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -22,7 +23,8 @@ export const routes: Routes = [
     path: '',
     component: LayoutComponent,
     children: [
-      { path: 'employees', component: EmployeesComponent }
+      { path: 'employees', component: EmployeesComponent },
+      { path: 'add-employee', component: AddEmployeeComponent }
     ]
   }
 ];
