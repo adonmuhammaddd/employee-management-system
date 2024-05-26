@@ -2,8 +2,6 @@
 
 ## Demo
 
-[:arrow_up: Back to top](#index)
-
 - Website: [http://ems.adonmuhammaddd.cloud](http://demo.adonmuhammaddd.cloud)
 - App login: [http://ems.adonmuhammaddd.cloud/login](http://demo.adonmuhammaddd.cloud/login)
 
@@ -15,10 +13,12 @@
 
 [:arrow_up: Back to top](#index)
 
-| Auth (Login / Logout)                        |
-| Employee List                                |
-| Pop up Detail Employee                       |
-| Add Employee                                 |
+| Features                  |
+| ----------                |
+| Auth (Login / Logout)     |
+| Employee List             |
+| Pop up Detail Employee    |
+| Add Employee              |
 
 ## Installation
 
